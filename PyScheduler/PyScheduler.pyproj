@@ -11,6 +11,10 @@
     <OutputPath>.</OutputPath>
     <Name>PyScheduler</Name>
     <RootNamespace>PyScheduler</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--clear --name PyScheduler\DisplaySleepTask</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterId>Global|PythonCore|3.10</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +26,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PyScheduler.py" />
+    <Compile Include="TaskManager.py" />
+    <Compile Include="TaskQuery.py" />
+    <Compile Include="TaskRepository.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.10" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
