@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 kill_firefox_and_display.bat
 launch params.txt
+PyScheduler/task_repository.xml
